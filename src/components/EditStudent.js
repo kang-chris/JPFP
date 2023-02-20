@@ -68,7 +68,7 @@ const EditStudent = () => {
 
                 <label htmlFor="campusId">Campus: </label>
                 <select name="campusId" onChange={(e) => setCampusId(e.target.value)}>
-                    <option value="defaultValue">Select New Campus</option>
+                    <option>Select New Campus</option>
                     {campuses.map((campus) => {
                         return (
                             <option value={campus.id} key={campus.id}>
